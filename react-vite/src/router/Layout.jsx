@@ -1,21 +1,26 @@
 import { Link, NavLink, Outlet } from 'react-router-dom';
-import data from '../data';
 import './Layout.css';
 
 export default function Layout() {
-  const { navigation } = data;
   return (
     <>
       <div id='navbar'>
         <div>
-          <Link to='/'>Molly O’Halloran</Link>
+          <Link to='/'>Miss Mary Mac</Link>
         </div>
         <div>
-          {navigation.map(({ name, URL }, i) => (
-            <NavLink to={URL} key={i}>
-              {name}
-            </NavLink>
-          ))}
+          <NavLink to='/' viewTransition>
+            Home
+          </NavLink>
+          <NavLink to='/bio' viewTransition>
+            Biography
+          </NavLink>
+          <NavLink to='/gallery' viewTransition>
+            Gallery
+          </NavLink>
+          <NavLink to='/reel' viewTransition>
+            Reel
+          </NavLink>
         </div>
       </div>
       <main id='page'>

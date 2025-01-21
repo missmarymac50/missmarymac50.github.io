@@ -1,5 +1,4 @@
 import { createBrowserRouter } from 'react-router-dom';
-import LandingPage from '../components/LandingPage';
 import Layout from './Layout';
 
 const router = createBrowserRouter([
@@ -8,23 +7,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <LandingPage />,
+        element: <h1>Home</h1>,
       },
       {
-        path: '/research',
-        element: <h1>Page Under Construction</h1>,
+        path: '/bio',
+        element: <h1>Biography</h1>,
       },
       {
-        path: '/outreach',
-        element: <h1>Page Under Construction</h1>,
+        path: '/gallery',
+        element: <h1>Gallery</h1>,
       },
       {
-        path: '/mentoring',
-        element: <h1>Page Under Construction</h1>,
-      },
-      {
-        path: '/contact',
-        element: <h1>Page Under Construction</h1>,
+        path: '/reel',
+        element: <h1>Reel</h1>,
       },
       { path: '/:pagename', element: <h1>Page Not Found</h1> },
     ],
