@@ -11,7 +11,7 @@ export default function Layout() {
           </div>
           <div>Singer, Boston MA</div>
         </div>
-        <div>
+        <div className='navbar-links'>
           <NavLink to='/' viewTransition>
             Home
           </NavLink>

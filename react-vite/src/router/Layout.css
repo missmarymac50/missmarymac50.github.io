@@ -14,20 +14,32 @@
   }
 
   /* container for navigation links */
-  #navbar > div:last-child {
+  .navbar-links {
     display: flex;
     gap: 5px;
     margin: 10px 0;
   }
 
   /* navigation links */
-  #navbar > div:last-child a {
+  .navbar-links a {
     font-size: 0.9em;
     color: var(--offwhite);
     height: fit-content;
   }
 
-  #navbar > div:last-child a.active {
+  .navbar-links a.active {
     color: var(--blue);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px;
+  }
+
+  .navbar-links {
+    gap: 8px;
   }
 }
