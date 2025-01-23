@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import Layout from './Layout';
 import Home from '../components/Home';
 import Bio from '../components/Bio';
+import Gallery from '../components/Gallery';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/gallery',
-        element: <h1>Gallery</h1>,
+        element: <Gallery />,
       },
       {
         path: '/reel',
