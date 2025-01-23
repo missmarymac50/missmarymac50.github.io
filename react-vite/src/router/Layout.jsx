@@ -5,8 +5,11 @@ export default function Layout() {
   return (
     <>
       <div id='navbar'>
-        <div>
-          <Link to='/'>MISS MARY MAC</Link>
+        <div className='site-header'>
+          <div className='site-title'>
+            <Link to='/'>MISS MARY MAC</Link>
+          </div>
+          <div>Singer, Boston MA</div>
         </div>
         <div>
           <NavLink to='/' viewTransition>
