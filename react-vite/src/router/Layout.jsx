@@ -6,7 +6,7 @@ export default function Layout() {
     <>
       <div id='navbar'>
         <div>
-          <Link to='/'>Miss Mary Mac</Link>
+          <Link to='/'>MISS MARY MAC</Link>
         </div>
         <div>
           <NavLink to='/' viewTransition>

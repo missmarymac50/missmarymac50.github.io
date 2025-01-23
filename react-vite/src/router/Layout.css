@@ -5,14 +5,16 @@
   #navbar {
     display: flex;
     justify-content: space-between;
-    background-color: var(--rock);
     padding: 5px 7px;
     margin-bottom: 10px;
   }
 
   /* container for site name */
   #navbar > div:first-child {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: var(--blue);
+    font-size: 1.7em;
   }
 
   /* container for navigation links */
@@ -24,9 +26,11 @@
   /* navigation links */
   #navbar > div:last-child a {
     font-size: 0.9em;
+    color: var(--offwhite);
+    height: fit-content;
   }
 
-  #navbar a.active {
-    font-weight: bold;
+  #navbar > div:last-child a.active {
+    color: var(--blue);
   }
 }
